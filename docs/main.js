@@ -138,7 +138,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" >\n  <div class=\"col s8 offset-s2\">\n    <span>Time Elapsed :</span>\n    <div class=\"progress\">\n      <div class=\"determinate\" [style.width.%]=\"10\"></div>\n    </div>\n    <div class=\"card blue-grey darken-1\">\n      <div class=\"card-content white-text\">\n        <span class=\"card-title\">quizService.qnProgress+1}}</span>\n        <p>{{quizService.qns[quizService.qnProgress].Qn</p>\n      </div>\n      <div class=\"card-action\">\n        <ul class=\"collection answer\">\n          <ng-container *ngFor=\"let option of quizService.qns[quizService.qnProgress].Options;let i = index\">\n            <li *ngIf=\"option != null\" class=\"collection-item\" (click)=\"Answer(quizService.qns[quizService.qnProgress].QnID,i)\">\n              {{option}}\n            </li>\n          </ng-container>\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>"
+module.exports = "<div class=\"row\" >\n  <div class=\"col s8 offset-s2\">\n    <span>Time Elapsed :</span>\n    <div class=\"progress\">\n      <div class=\"determinate\" [style.width.%]=\"10\"></div>\n    </div>\n    <div class=\"card blue-grey darken-1\">\n      <div class=\"card-content white-text\">\n        <span class=\"card-title\">title</span>\n        <p>Title  tiltle</p>\n      </div>\n      <div class=\"card-action\">\n        <ul class=\"collection answer\">\n          <ng-container >\n            <li  class=\"collection-item\" >\n              option\n            </li>\n          </ng-container>\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>"
 
 /***/ }),
 
@@ -154,13 +154,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuizComponent", function() { return QuizComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-
 
 
 var QuizComponent = /** @class */ (function () {
-    function QuizComponent(router) {
-        this.router = router;
+    function QuizComponent() {
     }
     QuizComponent.prototype.ngOnInit = function () {
     };
@@ -170,7 +167,7 @@ var QuizComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./quiz.component.html */ "./src/app/quiz/quiz.component.html"),
             styles: [__webpack_require__(/*! ./quiz.component.css */ "./src/app/quiz/quiz.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], QuizComponent);
     return QuizComponent;
 }());

@@ -92,6 +92,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _quiz_quiz_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./quiz/quiz.component */ "./src/app/quiz/quiz.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_material_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/slider */ "./node_modules/@angular/material/esm5/slider.es5.js");
+
+
 
 
 
@@ -107,7 +111,9 @@ var AppModule = /** @class */ (function () {
                 _quiz_quiz_component__WEBPACK_IMPORTED_MODULE_4__["QuizComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"],
+                _angular_material_slider__WEBPACK_IMPORTED_MODULE_6__["MatSliderModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -138,7 +144,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" >\n  <div class=\"col s8 offset-s2\">\n    <span>Time Elapsed :</span>\n    <div class=\"progress\">\n      <div class=\"determinate\" [style.width.%]=\"10\"></div>\n    </div>\n    <div class=\"card blue-grey darken-1\">\n      <div class=\"card-content white-text\">\n        <span class=\"card-title\">title</span>\n        <p>Title  tiltle</p>\n      </div>\n      <div class=\"card-action\">\n        <ul class=\"collection answer\">\n          <ng-container >\n            <li  class=\"collection-item\" >\n              option\n            </li>\n          </ng-container>\n        </ul>\n      </div>\n    </div>\n\n  </div>\n</div>"
+module.exports = ""
 
 /***/ }),
 

@@ -113,7 +113,7 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_5__["BrowserAnimationsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"]
+                _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatGridListModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -144,7 +144,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>HTML5</mat-card-title>\n     <mat-card-subtitle>HTML Basics</mat-card-subtitle>\n  </mat-card-header>\n  <img mat-card-image src = \"https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg\" alt = \"Learn HTML5\">\n  <mat-card-content>\n     <p>\n        HTML5 is the next major revision of the HTML standard superseding\n        HTML 4.01, XHTML 1.0, and XHTML 1.1. HTML5 is a standard for\n        structuring and presenting content on the World Wide Web.\n     </p>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>HTML5</mat-card-title>\n     <mat-card-subtitle>HTML Basics</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"2\" rowHeight=\"2:1\">\n      <mat-grid-tile>1</mat-grid-tile>\n      <mat-grid-tile>2</mat-grid-tile>\n      <mat-grid-tile>3</mat-grid-tile>\n      <mat-grid-tile>4</mat-grid-tile>\n    </mat-grid-list>\n    \n    \n    \n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 

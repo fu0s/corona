@@ -144,7 +144,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>HTML5</mat-card-title>\n     <mat-card-subtitle>HTML Basics</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"2\" rowHeight=\"2:1\">\n      <mat-grid-tile>1</mat-grid-tile>\n      <mat-grid-tile>2</mat-grid-tile>\n      <mat-grid-tile>3</mat-grid-tile>\n      <mat-grid-tile>4</mat-grid-tile>\n    </mat-grid-list>\n    \n    \n    \n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>HTML5</mat-card-title>\n     <mat-card-subtitle>HTML Basics</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"0.5:1\">\n      <mat-grid-tile>1</mat-grid-tile>\n      <mat-grid-tile>2</mat-grid-tile>\n      <mat-grid-tile>3</mat-grid-tile>\n      <mat-grid-tile>4</mat-grid-tile>\n    </mat-grid-list>\n    \n    \n    \n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 

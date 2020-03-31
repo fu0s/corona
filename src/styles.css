@@ -27,8 +27,6 @@ mat-card{
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
-    width: calc(100% - 70px);
-    height: calc(100% - 70px);
 }
 
 mat-card-content{

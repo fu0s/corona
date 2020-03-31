@@ -144,7 +144,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>HTML5</mat-card-title>\n     <mat-card-subtitle>HTML Basics</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"5px\" >\n      <mat-grid-tile>1</mat-grid-tile>\n      <mat-grid-tile>2</mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\">{{choix}}</mat-grid-tile>\n      <mat-grid-tile>2</mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 
@@ -160,12 +160,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuizComponent", function() { return QuizComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _assets_questionnaire_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/questionnaire.json */ "./src/assets/questionnaire.json");
+var _assets_questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../assets/questionnaire.json */ "./src/assets/questionnaire.json", 1);
+
 
 
 var QuizComponent = /** @class */ (function () {
     function QuizComponent() {
     }
     QuizComponent.prototype.ngOnInit = function () {
+        this.maQuestion = _assets_questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace;
+        console.log(this.maQuestion.question);
     };
     QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -179,6 +184,17 @@ var QuizComponent = /** @class */ (function () {
 }());
 
 
+
+/***/ }),
+
+/***/ "./src/assets/questionnaire.json":
+/*!***************************************!*\
+  !*** ./src/assets/questionnaire.json ***!
+  \***************************************/
+/*! exports provided: choix, question, default */
+/***/ (function(module) {
+
+module.exports = {"choix":["Oui, toussant presque tout le temps","Oui, tousse souvent","Oui, parfois tousse","aucun"],"question":"Avez-vous récemment commencé à tousser?"};
 
 /***/ }),
 

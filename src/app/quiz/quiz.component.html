@@ -1,12 +1,12 @@
 <mat-card class = "tp-card">
   <mat-card-header>
      <div mat-card-avatar class = "tp-header-image"></div>
-     <mat-card-title>HTML5</mat-card-title>
-     <mat-card-subtitle>HTML Basics</mat-card-subtitle>
+     <mat-card-title>Questionnaire</mat-card-title>
+     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <mat-grid-list cols="1" rowHeight="5px" >
-      <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-list cols="1" rowHeight="50px" >
+      <mat-grid-tile *ngFor="let choix of maQuestion.choix">{{choix}}</mat-grid-tile>
       <mat-grid-tile>2</mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>

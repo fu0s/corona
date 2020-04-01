@@ -144,7 +144,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\">{{choix}}</mat-grid-tile>\n      <mat-grid-tile>2</mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\">{{choix}}</mat-grid-tile>\n      <mat-grid-tile>2vvvv</mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>LIKE</button>\n     <button mat-button>SHARE</button>\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 
@@ -160,16 +160,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuizComponent", function() { return QuizComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../questionnaire.json */ "./src/questionnaire.json");
-var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../questionnaire.json */ "./src/questionnaire.json", 1);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 
 
 
 var QuizComponent = /** @class */ (function () {
-    function QuizComponent() {
+    function QuizComponent(httpClient) {
+        this.httpClient = httpClient;
     }
     QuizComponent.prototype.ngOnInit = function () {
-        this.maQuestion = _questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace;
+        var _this = this;
+        this.httpClient.get("../../questionnaire.json").subscribe(function (data) {
+            console.log(data);
+            _this.maQuestion = data;
+        });
         console.log(this.maQuestion.question);
     };
     QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -178,7 +182,7 @@ var QuizComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./quiz.component.html */ "./src/app/quiz/quiz.component.html"),
             styles: [__webpack_require__(/*! ./quiz.component.css */ "./src/app/quiz/quiz.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
     ], QuizComponent);
     return QuizComponent;
 }());
@@ -238,17 +242,6 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].produc
 Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
     .catch(function (err) { return console.error(err); });
 
-
-/***/ }),
-
-/***/ "./src/questionnaire.json":
-/*!********************************!*\
-  !*** ./src/questionnaire.json ***!
-  \********************************/
-/*! exports provided: choix, question, default */
-/***/ (function(module) {
-
-module.exports = {"choix":["Oui, toussant presque tout le temps","Oui, tousse souvent","Oui, parfois tousse","aucun"],"question":"Avez-vous récemment commencé à tousser?"};
 
 /***/ }),
 

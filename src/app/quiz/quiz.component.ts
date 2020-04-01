@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as QuestionnaireJson from '../../questionnaire.json';
 import { Question } from './Question';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-quiz',
@@ -8,11 +9,14 @@ import { Question } from './Question';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-      maQuestion: Question;
-  constructor() { }
+      maQuestion: any;
+  constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-    this.maQuestion = QuestionnaireJson;
+    this.httpClient.get("../../questionnaire.json").subscribe(data =>{
+      console.log(data);
+      this.maQuestion = data;
+    })
    console.log(this.maQuestion.question);
   }
 

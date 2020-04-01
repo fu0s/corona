@@ -13,7 +13,7 @@ export class QuizComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-    this.httpClient.get("../../questionnaire.json").subscribe(data =>{
+    this.httpClient.get("/questionnaire.json").subscribe(data =>{
       console.log(data);
       this.maQuestion = data;
     })

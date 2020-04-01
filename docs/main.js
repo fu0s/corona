@@ -170,7 +170,7 @@ var QuizComponent = /** @class */ (function () {
     }
     QuizComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.httpClient.get("../../questionnaire.json").subscribe(function (data) {
+        this.httpClient.get("/questionnaire.json").subscribe(function (data) {
             console.log(data);
             _this.maQuestion = data;
         });

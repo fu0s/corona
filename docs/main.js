@@ -126,6 +126,17 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/questionnaire.json":
+/*!************************************!*\
+  !*** ./src/app/questionnaire.json ***!
+  \************************************/
+/*! exports provided: choix, question, default */
+/***/ (function(module) {
+
+module.exports = {"choix":["Oui, toussant presque tout le temps","Oui, tousse souvent","Oui, parfois tousse","aucun"],"question":"Avez-vous récemment commencé à tousser?"};
+
+/***/ }),
+
 /***/ "./src/app/quiz/quiz.component.css":
 /*!*****************************************!*\
   !*** ./src/app/quiz/quiz.component.css ***!
@@ -160,8 +171,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuizComponent", function() { return QuizComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _assets_questionnaire_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/questionnaire.json */ "./src/assets/questionnaire.json");
-var _assets_questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../assets/questionnaire.json */ "./src/assets/questionnaire.json", 1);
+/* harmony import */ var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questionnaire.json */ "./src/app/questionnaire.json");
+var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../questionnaire.json */ "./src/app/questionnaire.json", 1);
 
 
 
@@ -169,7 +180,7 @@ var QuizComponent = /** @class */ (function () {
     function QuizComponent() {
     }
     QuizComponent.prototype.ngOnInit = function () {
-        this.maQuestion = _assets_questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace;
+        this.maQuestion = _questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace;
         console.log(this.maQuestion.question);
     };
     QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -184,17 +195,6 @@ var QuizComponent = /** @class */ (function () {
 }());
 
 
-
-/***/ }),
-
-/***/ "./src/assets/questionnaire.json":
-/*!***************************************!*\
-  !*** ./src/assets/questionnaire.json ***!
-  \***************************************/
-/*! exports provided: choix, question, default */
-/***/ (function(module) {
-
-module.exports = {"choix":["Oui, toussant presque tout le temps","Oui, tousse souvent","Oui, parfois tousse","aucun"],"question":"Avez-vous récemment commencé à tousser?"};
 
 /***/ }),
 

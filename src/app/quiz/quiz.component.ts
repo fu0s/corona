@@ -9,15 +9,14 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-      maQuestion: any;
+      maQuestion:Question  = null;
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
-    this.httpClient.get("/questionnaire.json").subscribe(data =>{
+    this.httpClient.get<Question>("/corona/questionnaire.json").subscribe(data =>{
       console.log(data);
       this.maQuestion = data;
     })
-   console.log(this.maQuestion.question);
   }
 
 }

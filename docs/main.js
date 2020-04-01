@@ -170,14 +170,14 @@ __webpack_require__.r(__webpack_exports__);
 var QuizComponent = /** @class */ (function () {
     function QuizComponent(httpClient) {
         this.httpClient = httpClient;
+        this.maQuestion = null;
     }
     QuizComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.httpClient.get("/questionnaire.json").subscribe(function (data) {
+        this.httpClient.get("/corona/questionnaire.json").subscribe(function (data) {
             console.log(data);
             _this.maQuestion = data;
         });
-        console.log(this.maQuestion.question);
     };
     QuizComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

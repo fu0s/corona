@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as QuestionnaireJson from '../questionnaire.json';
+import * as QuestionnaireJson from '../../questionnaire.json';
 import { Question } from './Question';
 
 @Component({

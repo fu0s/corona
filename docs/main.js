@@ -126,17 +126,6 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/questionnaire.json":
-/*!************************************!*\
-  !*** ./src/app/questionnaire.json ***!
-  \************************************/
-/*! exports provided: choix, question, default */
-/***/ (function(module) {
-
-module.exports = {"choix":["Oui, toussant presque tout le temps","Oui, tousse souvent","Oui, parfois tousse","aucun"],"question":"Avez-vous récemment commencé à tousser?"};
-
-/***/ }),
-
 /***/ "./src/app/quiz/quiz.component.css":
 /*!*****************************************!*\
   !*** ./src/app/quiz/quiz.component.css ***!
@@ -171,8 +160,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuizComponent", function() { return QuizComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../questionnaire.json */ "./src/app/questionnaire.json");
-var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../questionnaire.json */ "./src/app/questionnaire.json", 1);
+/* harmony import */ var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../questionnaire.json */ "./src/questionnaire.json");
+var _questionnaire_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../questionnaire.json */ "./src/questionnaire.json", 1);
 
 
 
@@ -249,6 +238,17 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].produc
 Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
     .catch(function (err) { return console.error(err); });
 
+
+/***/ }),
+
+/***/ "./src/questionnaire.json":
+/*!********************************!*\
+  !*** ./src/questionnaire.json ***!
+  \********************************/
+/*! exports provided: choix, question, default */
+/***/ (function(module) {
+
+module.exports = {"choix":["Oui, toussant presque tout le temps","Oui, tousse souvent","Oui, parfois tousse","aucun"],"question":"Avez-vous récemment commencé à tousser?"};
 
 /***/ }),
 

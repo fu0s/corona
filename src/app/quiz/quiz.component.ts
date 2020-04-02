@@ -9,7 +9,7 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-      maQuestion:Question  = null;
+      maQuestion:Question  = new Question;
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {

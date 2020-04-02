@@ -129,6 +129,26 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/quiz/Question.ts":
+/*!**********************************!*\
+  !*** ./src/app/quiz/Question.ts ***!
+  \**********************************/
+/*! exports provided: Question */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Question", function() { return Question; });
+var Question = /** @class */ (function () {
+    function Question() {
+    }
+    return Question;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/quiz/quiz.component.css":
 /*!*****************************************!*\
   !*** ./src/app/quiz/quiz.component.css ***!
@@ -163,14 +183,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuizComponent", function() { return QuizComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _Question__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Question */ "./src/app/quiz/Question.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
 
 
 
 var QuizComponent = /** @class */ (function () {
     function QuizComponent(httpClient) {
         this.httpClient = httpClient;
-        this.maQuestion = null;
+        this.maQuestion = new _Question__WEBPACK_IMPORTED_MODULE_2__["Question"];
     }
     QuizComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -185,7 +207,7 @@ var QuizComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./quiz.component.html */ "./src/app/quiz/quiz.component.html"),
             styles: [__webpack_require__(/*! ./quiz.component.css */ "./src/app/quiz/quiz.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]])
     ], QuizComponent);
     return QuizComponent;
 }());

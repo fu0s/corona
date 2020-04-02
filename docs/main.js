@@ -167,7 +167,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\">{{choix}}</mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-button>Suivant</button>\n     <button mat-button>Partager</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\">{{choix}}</mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-raised-button>Suivant</button>\n     <button mat-raised-button>Partager</button>\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 

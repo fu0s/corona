@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 input.ng-invalid.ng-dirty{
     border-bottom-color : #e91e63 !important;
     box-shadow: 0 1px 0 0 #e91e63 !important;
@@ -9,13 +10,13 @@ button.btn-submit{
     width: 100%;
 }
 
-ul.answer li:hover{
+mat-grid-tile:hover{
     background-color: #26a69a;
     color: #eafaf9;
     cursor: pointer;
 }
 
-ul li.selected{
+mat-grid-tile.selected{
     background-color: #26a69a !important;
     color: #eafaf9 !important;
 }

@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
-/**@import '@angular/material/prebuilt-themes/pink-bluegrey.css';*/
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
 mat-grid-tile:hover{
     background-color: #26a69a;
@@ -15,7 +15,7 @@ mat-grid-tile.selected{
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @media (min-width: 600px) {
-mat-card{
+.tp-card{
    margin-top: 100px;
     margin-bottom: 100px;
     margin-right: 150px;

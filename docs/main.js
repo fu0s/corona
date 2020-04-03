@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-quiz></app-quiz>"
+module.exports = "<mat-sidenav-container >\n  <mat-sidenav mode=\"side\" opened>Sidenav content</mat-sidenav>\n  <mat-sidenav-content>Main content</mat-sidenav-content>\n</mat-sidenav-container>\n<app-quiz></app-quiz>"
 
 /***/ }),
 
@@ -115,7 +115,7 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
             ],
             providers: [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]],
@@ -167,7 +167,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\">\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\">\n        <mat-card class = \"tp-card\">{{choix}}</mat-card>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions>\n     <button mat-raised-button>Suivant</button>\n     <button mat-raised-button>Partager</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class = \"tp-card\" >\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\" >\n        <mat-card>{{choix}}</mat-card>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions >\n     <button mat-raised-button>Suivant</button>\n     <button mat-raised-button>Partager</button>\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 
@@ -257,6 +257,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

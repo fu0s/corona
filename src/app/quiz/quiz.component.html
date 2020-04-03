@@ -6,7 +6,9 @@
   </mat-card-header>
   <mat-card-content>
     <mat-grid-list cols="1" rowHeight="50px" >
-      <mat-grid-tile *ngFor="let choix of maQuestion.choix">{{choix}}</mat-grid-tile>
+      <mat-grid-tile *ngFor="let choix of maQuestion.choix">
+        <mat-card class = "tp-card">{{choix}}</mat-card>
+      </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>
   <mat-card-actions>

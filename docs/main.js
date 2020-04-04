@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container >\n  <mat-sidenav mode=\"side\" opened>Sidenav content</mat-sidenav>\n  <mat-sidenav-content>Main content</mat-sidenav-content>\n</mat-sidenav-container>\n<app-quiz></app-quiz>"
+module.exports = "<mat-sidenav-container >\n  <mat-sidenav-content>Main content</mat-sidenav-content>\n</mat-sidenav-container>\n<app-quiz></app-quiz>"
 
 /***/ }),
 

@@ -7,7 +7,12 @@
   <mat-card-content>
     <mat-grid-list cols="1" rowHeight="50px" >
       <mat-grid-tile *ngFor="let choix of maQuestion.choix" >
-        {{choix}}
+        <label id="example-radio-group-label">{{maQuestion.question}}</label>
+        <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
+          <mat-radio-button class="example-radio-button" color="primary">
+            {{choix}}
+          </mat-radio-button>
+        </mat-radio-group>
       </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>

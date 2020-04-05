@@ -115,7 +115,7 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatRadioModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatIconModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
             ],
             providers: [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]],
@@ -167,7 +167,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\" >\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\" >\n        {{choix}}\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions >\n     <button color=\"primary\" mat-raised-button>Suivant</button>\n     <button color=\"primary\" mat-raised-button>Partager</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class = \"tp-card\" >\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\" >\n        <label id=\"example-radio-group-label\">{{maQuestion.question}}</label>\n        <mat-radio-group aria-labelledby=\"example-radio-group-label\" class=\"example-radio-group\">\n          <mat-radio-button class=\"example-radio-button\" color=\"primary\">\n            {{choix}}\n          </mat-radio-button>\n        </mat-radio-group>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions >\n     <button color=\"primary\" mat-raised-button>Suivant</button>\n     <button color=\"primary\" mat-raised-button>Partager</button>\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 

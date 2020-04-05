@@ -1,3 +1,4 @@
+<div class="mat-app-background">
 <mat-card class = "tp-card" >
   <mat-card-header>
      <div mat-card-avatar class = "tp-header-image"></div>
@@ -7,7 +8,7 @@
   <mat-card-content>
     <mat-grid-list cols="1" rowHeight="50px" >
       <mat-grid-tile *ngFor="let choix of maQuestion.choix" >
-        <mat-card>{{choix}}</mat-card>
+        {{choix}}
       </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>
@@ -16,3 +17,4 @@
      <button mat-raised-button>Partager</button>
   </mat-card-actions>
 </mat-card>
+</div>

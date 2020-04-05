@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container color=\"primary\">\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <mat-icon>menu</mat-icon>\n    My Application\n    <span class=\"toolbar-spacer\"></span>\n    My Account\n  </mat-toolbar>\n</mat-sidenav-content>\n</mat-sidenav-container>\n<app-quiz></app-quiz>"
+module.exports = "<mat-sidenav-container >\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <mat-icon>menu</mat-icon>\n    Corona Test\n    <span class=\"toolbar-spacer\"></span>\n    Autre\n  </mat-toolbar>\n</mat-sidenav-content>\n</mat-sidenav-container>\n<app-quiz></app-quiz>"
 
 /***/ }),
 
@@ -167,7 +167,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class = \"tp-card\" >\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\" >\n        <mat-card>{{choix}}</mat-card>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions >\n     <button mat-raised-button>Suivant</button>\n     <button mat-raised-button>Partager</button>\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<div class=\"mat-app-background\">\n<mat-card class = \"tp-card\" >\n  <mat-card-header>\n     <div mat-card-avatar class = \"tp-header-image\"></div>\n     <mat-card-title>Questionnaire</mat-card-title>\n     <mat-card-subtitle>{{maQuestion.question}}</mat-card-subtitle>\n  </mat-card-header>\n  <mat-card-content>\n    <mat-grid-list cols=\"1\" rowHeight=\"50px\" >\n      <mat-grid-tile *ngFor=\"let choix of maQuestion.choix\" >\n        {{choix}}\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-card-content>\n  <mat-card-actions >\n     <button mat-raised-button>Suivant</button>\n     <button mat-raised-button>Partager</button>\n  </mat-card-actions>\n</mat-card>\n</div>"
 
 /***/ }),
 

@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container >\n  <mat-sidenav-content>Main content</mat-sidenav-content>\n</mat-sidenav-container>\n<app-quiz></app-quiz>"
+module.exports = "<mat-sidenav-container color=\"primary\">\n  <mat-sidenav-content>\n    <mat-toolbar color=\"primary\">\n      <mat-icon>menu</mat-icon>\n    My Application\n    <span class=\"toolbar-spacer\"></span>\n    My Account\n  </mat-toolbar>\n</mat-sidenav-content>\n</mat-sidenav-container>\n<app-quiz></app-quiz>"
 
 /***/ }),
 
@@ -115,7 +115,7 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatCardModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatGridListModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"], _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatToolbarModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
             ],
             providers: [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]],

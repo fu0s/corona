@@ -4,7 +4,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule, MatButtonModule, MatGridListModule, MatSidenavModule} from '@angular/material';
+import {MatCardModule, MatButtonModule, MatGridListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +13,7 @@ import {MatCardModule, MatButtonModule, MatGridListModule, MatSidenavModule} fro
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule, MatCardModule, MatGridListModule, MatSidenavModule,
+    MatButtonModule, MatCardModule, MatGridListModule, MatSidenavModule, MatToolbarModule,
     HttpClientModule
   ],
   providers: [HttpClient],
